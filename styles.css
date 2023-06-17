@@ -2,11 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e3d2eb;
+    background-color: #cfc8d3;
+    background-image: url("./book-856151_1280\ \(1\).jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
   }
   
   header {
-    background-color: #222;
+    background-color: #adcfda85;
     color: #fff;
     padding: 10px;
     display: flex;
@@ -65,7 +68,7 @@ body {
   
   .wordCard {
     border: 1px solid #ccc;
-    background-color: #fff;
+    background-color: #e4b9b9;
     padding: 10px;
     margin-bottom: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
