@@ -20,6 +20,8 @@ body {
   h1 {
     margin: 0;
     font-size: 24px;
+    padding: 0px 100px 0px 450px; 
+    color: black; font-weight: bold;
   }
   
   button {
@@ -87,7 +89,7 @@ body {
   }
   
   .deleteBtn {
-    background-color: rgb(228, 34, 34);
+    background-color: rgb(6, 31, 173);
     color: white;
     padding: 5px 10px;
     margin: 5px 1020px;
@@ -97,6 +99,6 @@ body {
   }
   
   .deleteBtn:hover {
-    background-color: darkred;
+    background-color: rgb(11, 1, 56);
   }
   

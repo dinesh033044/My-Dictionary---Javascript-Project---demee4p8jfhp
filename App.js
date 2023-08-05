@@ -3,6 +3,7 @@ const searchInput = document.getElementById('searchInput');
 const searchBtn = document.getElementById('searchBtn');
 const historyBtn = document.getElementById('historyBtn');
 const wordCardsContainer = document.getElementById('wordCardsContainer');
+const clearHistory=document.getElementById('clearHistory');
 
 // Event listeners
 searchBtn.addEventListener('click', searchWord);
@@ -19,8 +20,9 @@ function searchWord() {
         if (data.length > 0) {
           const wordObj = {
             word: data[0].word,
-            meaning: data[0].meanings[0].definition
+            meaning: data[0].meanings[0].definitions[0].definition
           };
+          console.log(wordObj);
           // Add word to word cards
           addWordCard(wordObj);
           // Save word to localStorage
@@ -99,3 +101,12 @@ function getFromLocalStorage() {
   }
   return searches;
 }
+
+// clear All history
+
+// clearHistory.addEventListener('click',()=>{
+//   searches=[];
+//   wordCardsContainer.innerHTML = '';
+//   searches.splice();
+//   localStorage.setItem('searches', JSON.stringify(searches));
+// });
